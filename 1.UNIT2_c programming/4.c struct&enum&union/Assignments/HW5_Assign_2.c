@@ -11,21 +11,22 @@
 
 struct Sadd
 {
-	int inch1,inch2,sum1;
-	float feet1,feet2,sum2;
+	int inch;
+	float feet;
 
 };
 int main()
 {
-	struct Sadd a;
+	struct Sadd a,b;
+	int sum_i; float sum_f;
 	printf("Enter information of 1st distance\nInch = ");
-	fflush(stdout); fflush(stdin); scanf("%d",&a.inch1);
+	fflush(stdout); fflush(stdin); scanf("%d",&a.inch);
 	printf("Feet =  ");
-	fflush(stdout); fflush(stdin); scanf("%f",&a.feet1); printf("\n");
+	fflush(stdout); fflush(stdin); scanf("%f",&a.feet); printf("\n");
 	printf("Enter information of 2nd distance\nInch = ");
-	fflush(stdout); fflush(stdin); scanf("%d",&a.inch2);
+	fflush(stdout); fflush(stdin); scanf("%d",&b.inch);
 	printf("Feet =  ");
-	fflush(stdout); fflush(stdin); scanf("%f",&a.feet2);
-	a.sum1=a.inch1+a.inch2; a.sum2=a.feet1+a.feet2;
-	printf("\nSum of distances = %d\' %.2f\"\n",a.sum1,a.sum2);
+	fflush(stdout); fflush(stdin); scanf("%f",&b.feet);
+	sum_i=a.inch+b.inch; sum_f=a.feet+b.feet;
+	printf("\nSum of distances = %d\' %.2f\"\n",sum_i,sum_f);
 }
