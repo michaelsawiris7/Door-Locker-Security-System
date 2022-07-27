@@ -9,7 +9,8 @@
 #include "stdio.h"
 #include "string.h"
 
-struct Sstudent {
+struct Sstudent 
+{
 	char name[100];
 	int roll;
 	float marks;
@@ -27,6 +28,4 @@ struct Sstudent {
 	 printf("Name: %s\n",s.name);
 	 printf("Roll no.: %d\n",s.roll);
 	 printf("Marks: %.1f\n",s.marks);
-
-
  }
