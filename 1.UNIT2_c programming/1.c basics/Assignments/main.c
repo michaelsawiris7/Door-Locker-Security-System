@@ -5,23 +5,17 @@
  *      Author: Michael Samir
  */
 
-// Assignment 6
+
+
+// Assignment 5
 
 #include "stdio.h"
 int main()
 {
-	float a,b,c;
-	printf("Enter value of a: ");
+	char x;
+	printf("Enter a character: ");
 	fflush(stdout);
 	fflush(stdin);
-	scanf("%f",&a);
-	printf("Enter value of b: ");
-	fflush(stdout);
-	fflush(stdin);
-	scanf("%f",&b);
-	c=a;a=b;b=c;
-	printf("After swapping, value of a = %.2f\n",a);
-	printf("After swapping, value of b = %.2f\n",b);
-
+	scanf("%c",&x);
+	printf("ASCII value of %c = %i\n",x,x);
 }
-
