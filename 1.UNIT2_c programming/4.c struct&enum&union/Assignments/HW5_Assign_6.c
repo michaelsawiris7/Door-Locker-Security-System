@@ -21,6 +21,6 @@ struct job1
 }s;
 int main()
 {
-printf("size of union     = %d bytes.\n", sizeof(u)); //1*32       = 32 bytes
-printf("size of structure = %d bytes.\n", sizeof(s)); //1*32 +4+4  = 40 bytes
+    printf("size of union     = %d bytes.\n", sizeof(u)); //1*32       = 32 bytes
+    printf("size of structure = %d bytes.\n", sizeof(s)); //1*32 +4+4  = 40 bytes
 }
